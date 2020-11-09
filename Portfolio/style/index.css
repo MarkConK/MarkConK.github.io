@@ -1,22 +1,10 @@
-#imgheader {
-    border-radius: 60%;
-    height: 80%;
-    width: 50%;
-    margin-top: 10%;
-    
-}
-nav {
-    padding-top: 2%;
-}
-h1 {
-   margin-top: 15%;
-}
 #texto {
+    text-align: left;
     margin-top: 10%;
 }
 #imgcontent {
-    height: 50%;
-    width: 60%;
-    margin-top: 10%;
-    
+    border-radius: 5%;
+    height: 80%;
+    width: 80%;
+    margin-top: 10%;  
 }
