@@ -1,14 +1,37 @@
+body{
+    background-color:#343a40;
+}
 #imgheader {
     border-radius: 60%;
     height: 80%;
     width: 50%;
-    margin-top: 10%;
-    
+    margin-top: 10%;   
+}
+.link{
+    color: white;
+}
+.link:hover{
+    /*#52d053 */
+    color: #765898;
 }
 nav {
     padding-top: 2%;
 }
 h1 {
     text-align: center;
-    margin-top: 15%;
+}
+h3{
+    text-decoration: underline;
+}
+.col-header{
+    margin-top: 5%;
+}
+.col-left{
+    padding-left: 50px;
+}
+.row-padding-top{
+    padding-top: 50px;
+}
+.nav-asdf.active {
+    background-color: #765898!important;
 }
