@@ -50,28 +50,28 @@ document.addEventListener('DOMContentLoaded', () => {
             img: 'media/fruta/uvas.png'
         }
     ]
-
-    const arrayClientes = [
+    const clienteArray = [
         {
-            name: 'cloud',
-            img: 'media/cloud.png'
+            name: 'person1',
+            img: 'media/personas/person1.png'
         },
         {
-            name: 'kairi',
-            img: 'media/kairi.png'
+            name: 'person2',
+            img: 'media/personas/person2.png'
         },
         {
-            name: 'roxas',
-            img: 'media/roxas.png'
+            name: 'person3',
+            img: 'media/personas/person3.png'
         },
         {
-            name: 'riku',
-            img: 'media/riku.png'
+            name: 'person4',
+            img: 'media/personas/person4.png'
         }
     ]
 
     const grid = document.querySelector('.grid')
     const grid_prodcutos = document.querySelector('.grid-productos')
+    const grid_clientes = document.querySelector('.grid-clientes')
 
     var productChosen =   [];
     var productChosenId = [];
@@ -88,16 +88,27 @@ document.addEventListener('DOMContentLoaded', () => {
             grid.appendChild(product)
         }
     }
-    //createboardClientes
-    function createBoardClientes(){
-        for(let j = 0; j < 5; j++){
-            var cliente = document.createElement('img')
-            cliente.setAttribute('data-id', j)
-            cliente.setAttribute('src', productArray[j].img)
-            cliente.addEventListener('click', clickProductos)
-            grid_prodcutos.appendChild(cliente)
+    //createboardProductoCliente
+    function createBoardProductoCliente(){
+        for(let j = 0; j < 4; j++){
+            var producto_cliente = document.createElement('img')
+            producto_cliente.setAttribute('data-id', j)
+            producto_cliente.setAttribute('src', productArray[j].img)
+            producto_cliente.addEventListener('click', clickProductos)
+            grid_prodcutos.appendChild(producto_cliente)
         }
     }
+    //createboardClientes
+    function createBoardClientes(){
+        for(let k = 0; k < clienteArray.length; k++){
+            var cliente = document.createElement('img')
+            cliente.setAttribute('data-id', k)
+            cliente.setAttribute('src', clienteArray[k].img)
+            grid_clientes.appendChild(cliente)
+        }
+    }
+   
+
     //check matches
     function checkForMatch(){
         const optionOneId = productChosenId[0]
@@ -121,8 +132,8 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(checkForMatch, 100)
         }
     }
-
     createBoardProductos()
+    createBoardProductoCliente()
     createBoardClientes()
 
 })

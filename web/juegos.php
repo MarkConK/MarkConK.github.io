@@ -58,12 +58,12 @@
           <div class="grid"></div>
         </div>
         <!-- row productos -->
-        <div class="row">
-          <div class="grid-productos"></div>
+        <div class="row row-productoClientes">
+          <div class="grid-productos"></div>          
         </div>
         <!-- row clientes -->
         <div class="row row-clientes">
-          <div class="grid-productos"></div>
+          <div class="grid-clientes"></div>
         </div>
       </div>
     </div>
