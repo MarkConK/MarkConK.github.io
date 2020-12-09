@@ -2,6 +2,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const productArray =[
         {
+            name: 'arandano',
+            img: 'media/fruta/arandano.png'
+        },
+        {
+            name: 'cereza',
+            img: 'media/fruta/cereza.png'
+        },
+        {
+            name: 'coco',
+            img: 'media/fruta/coco.png'
+        },
+        {
+            name: 'fresa',
+            img: 'media/fruta/fresa.png'
+        },
+        {
+            name: 'mango',
+            img: 'media/fruta/mango.png'
+        },
+        {
+            name: 'naranja',
+            img: 'media/fruta/naranja.png'
+        },
+        {
+            name: 'manzana',
+            img: 'media/fruta/manzana.png'
+        },
+        {
+            name: 'pera',
+            img: 'media/fruta/pera.png'
+        },
+        {
+            name: 'pina',
+            img: 'media/fruta/pina.png'
+        },
+        {
+            name: 'platanos',
+            img: 'media/fruta/platanos.png'
+        },
+        {
+            name: 'sandia',
+            img: 'media/fruta/sandia.png'
+        },
+        {
+            name: 'uvas',
+            img: 'media/fruta/uvas.png'
+        }
+    ]
+
+    const arrayClientes = [
+        {
             name: 'cloud',
             img: 'media/cloud.png'
         },
@@ -16,55 +67,12 @@ document.addEventListener('DOMContentLoaded', () => {
         {
             name: 'riku',
             img: 'media/riku.png'
-        },
-        {
-            name: 'sora',
-            img: 'media/sora.png'
-        },
-        {
-            name: 'axel',
-            img: 'media/axel.png'
-        },
-        {
-            name: 'cloud',
-            img: 'media/cloud.png'
-        },
-        {
-            name: 'kairi',
-            img: 'media/kairi.png'
-        },
-        {
-            name: 'roxas',
-            img: 'media/roxas.png'
-        },
-        {
-            name: 'riku',
-            img: 'media/riku.png'
-        },
-        {
-            name: 'sora',
-            img: 'media/sora.png'
-        },
-        {
-            name: 'axel',
-            img: 'media/axel.png'
-        },
-        {
-            name: 'riku',
-            img: 'media/riku.png'
-        },
-        {
-            name: 'sora',
-            img: 'media/sora.png'
-        },
-        {
-            name: 'axel',
-            img: 'media/axel.png'
         }
     ]
 
     const grid = document.querySelector('.grid')
     const grid_prodcutos = document.querySelector('.grid-productos')
+
     var productChosen =   [];
     var productChosenId = [];
     var productScore =      [];

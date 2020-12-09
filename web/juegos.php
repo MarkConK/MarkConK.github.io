@@ -62,7 +62,9 @@
           <div class="grid-productos"></div>
         </div>
         <!-- row clientes -->
-        <!--<div class="row row-clientes"></div>-->
+        <div class="row row-clientes">
+          <div class="grid-productos"></div>
+        </div>
       </div>
     </div>
   </div>
