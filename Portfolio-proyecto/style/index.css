@@ -1,0 +1,21 @@
+.wireframe{
+    padding-top: 40px;
+    padding-right: 100px;
+    height: 500px;
+    width: 450px;
+}
+h2{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+#target{
+    padding-left: 150px;
+}
+#modelo{
+    height: 600px;
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
