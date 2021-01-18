@@ -1,8 +1,8 @@
-.wireframe{
-    padding-top: 40px;
-    padding-right: 100px;
-    height: 500px;
-    width: 450px;
+body{
+    background-color: #000000;
+}
+#txtPresent{
+    padding-left: 10%;
 }
 h2{
     padding-top: 50px;
@@ -10,12 +10,59 @@ h2{
     text-align: center;
 }
 #target{
-    padding-left: 150px;
+    padding-left: 15%;
 }
-#modelo{
-    height: 600px;
-    width: 500px;
+#txtTarget{
+    padding-top: 8%;
+}
+#modeloPng{
+    height: 750px;
+    width: 1200px;
     display: block;
     margin: auto;
 }
-
+#modeloPng3{
+    height: 375px;
+    width: 1200px;
+    display: block;
+    margin: auto;
+}
+#bdPng{
+    height: 750px;
+    width: 1200px;
+    display: block;
+    margin: auto;
+}
+h6{
+    text-align: center;
+    padding-top: 3%;
+}
+.wireframe{
+    height: 650px;
+    width: 415px;
+}
+#whishlist{
+    display: block;
+    margin: auto;
+}
+#colores{
+    padding-left: 15%;
+    padding-bottom: 4%;
+}
+#txtColores{
+    padding-top: 8%;
+    padding-left: 15%; 
+}
+#txtLogo{
+    padding-top: 4%;
+}
+#personaje{
+    height: 250px;
+    width: 250px;
+}
+#gamePng{
+    height: 375px;
+    width: 600px;
+    padding-top: 5%;
+    margin-bottom: 10%;
+}
