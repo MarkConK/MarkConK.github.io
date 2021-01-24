@@ -1,0 +1,94 @@
+aux = 0;
+points = 0;
+const plantas = document.getElementById('plantas');
+const tablero = document.getElementById('tablero');
+
+plantas.addEventListener('dragstart', (e) => {
+    e.dataTransfer.setData('text/plain', e.target.id)
+    console.log(e.dataTransfer.getData('text'));
+} )
+
+plantas.addEventListener('drag', (e)=>{
+    e.target.classList.add('active')
+})
+
+//cuando terminamos de arrastrar la planta
+plantas.addEventListener('dragend', (e)=>{
+    e.target.classList.remove('active')
+})
+//este evento es obligatorio
+tablero.addEventListener('dragover', (e) =>{
+    e.preventDefault()
+})
+
+tablero.addEventListener('drop', (e)=>{
+    e.preventDefault()
+    const element = document.getElementById(e.dataTransfer.getData('text'))
+    element.classList.remove('active')
+    //tablero.appendChild(plantas(element))
+    tablero.appendChild(plantas.removeChild(element))//pon esta planta quí y eliminala
+})
+
+
+//ocultamos el footer de momento
+document.querySelector('footer').hidden = true;
+
+function timer(){
+    const timer = document.querySelector('#timer')
+    let currentTime  = timer.textContent
+    currentTime--
+    timer.textContent = currentTime
+
+    if (currentTime === 0) {
+        clearInterval(timeLeft)
+        //alert("GAME OVER")
+        puntosDisplay.textContent   = "HAS GANADO UN TOTAL DE " + points + " PUNTOS"
+        modal.style.display         = "block"
+    };
+    /*var intervalTime = setInterval(function(){
+        if(time>=0){
+            timer.innerHTML = time
+            time--; 
+            if(time<=10){
+                timer.style.color = "red"
+            }
+        }
+        else{clearInterval(intervalTime);
+        puntosDisplay.textContent   = "HAS GANADO UN TOTAL DE " + points + " PUNTOS";
+        modal.style.display         = "block";}
+    checkDivFood()
+    },1000)*/
+}
+let timeLeft = setInterval(timer, 1000)
+//timer();
+
+function keepPoints(){
+    const bar           = document.querySelector('.progress-bar')
+    var aux = bar.textContent
+    console.log(aux)
+    bar.textContent     = (ganancia + parseInt(aux)) + "%"
+    console.log(bar.textContent)
+    document.getElementById("progress-bar").style.width = bar.textContent
+    ganancia = 0
+    modal.style.display = "none"
+}
+
+// dropZone.addEventListener('dragover', (e) => {
+//     e.preventDefault()
+//     console.log("Drag Over")
+// })
+// dropZone.addEventListener('drop', (e) => {
+//     e.preventDefault()
+//     console.log('Drop')
+// }) 
+
+// dropZone.addEventListener('dragLeave', (e) =>{
+//     e.preventDefault()
+//     console.log('Drag Leave')    
+// })
+//function colisionar(){
+    
+
+//}
+
+

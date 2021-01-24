@@ -1,0 +1,25 @@
+.menu{
+    margin-left:19%;
+}
+#menu{
+    margin-top:80px;
+    list-style:none;
+    font-size:16px;
+}
+#menu a{
+    color:#636363;
+}
+#menu a:hover{
+    color:grey;
+}
+#formInfo{
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+#titulo{
+    text-align: center;
+}
+#rowPromo{
+    margin-top: 5%;
+}
